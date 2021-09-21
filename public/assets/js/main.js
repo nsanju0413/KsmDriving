@@ -34,6 +34,8 @@
     el.addEventListener('scroll', listener)
   }
 
+
+
   /**
    * Navbar links active state on scroll
    */
@@ -206,9 +208,7 @@
       mirror: false
     })
   });
-
 })()
-
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
   apiKey: "AIzaSyBeAA0M1l570a4lk2He-2EyvBctwWQ7VmI",
@@ -236,23 +236,29 @@ function submitForm(e){
   // Get values
   var name = getInputVal('name');
   var email = getInputVal('email');
-  var phone = getInputVal('phone');
   var message = getInputVal('message');
 
   // Save message
-  saveMessage(name, email, phone, message);
+  saveMessage(name, email, message);
 
   // Show alert
-  document.querySelector('.alert').style.display = 'block';
+  document.querySelector('.loading').style.display = 'block';
 
   // Hide alert after 3 seconds
   setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);
+    document.querySelector('.loading').style.display = 'none';
+  },500);
 
-  // Clear form
+  setTimeout(function(){
+    document.querySelector('.sent-request').style.display = 'block';
+  },800);
+ 
+  setTimeout(function(){
   document.getElementById('contactForm').reset();
+   location.reload(true);
+  },1500);
 }
+
 
 // Function to get get form values
 function getInputVal(id){
@@ -260,12 +266,11 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, email, phone, message){
+function saveMessage(name, email, message){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
     email:email,
-    phone:phone,
     message:message
   });
 }

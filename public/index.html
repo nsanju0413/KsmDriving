@@ -11,6 +11,7 @@
 ,Driver's With Car,Self Drive Car" name="keywords">
 
   <!-- Favicons -->
+  
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -23,9 +24,11 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
 
 </head>
 
@@ -36,14 +39,14 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div id="logo">
-        <h1><a href="index.html"><span>KSM</span>Drriving</a></h1>
+        <h1><a href="index.html"><span>KSM</span>Driving</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Hoome</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#get-started">Services</a></li>
           <li><a class="nav-link scrollto" href="#about-us">About</a></li>
           <li><a class="nav-link scrollto" href="#pricing">Reviews</a></li>
@@ -58,15 +61,14 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div class="hero-container" data-aos="fade-in">
+    <div class="hero-container">
       <br>    <br>
-      <h1>Welcome to KSM Driving School</h1>
-      <h2>Learn your own car</h2>
-      <img src="assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
-      <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
-      <div class="btns">
+      <h1 data-aos="fade-down" data-aos-delay="100">Welcome to KSM Driving School</h1>
+      <img src="assets/img/hero-img1.png" alt="Hero Imgs" data-aos="zoom-in" data-aos-delay="100">
+      <a href="#get-started" class="btn-get-started scrollto" data-aos="fade-up">Get Started</a>
+     <!-- <div class="btns">
         <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
-      </div>
+      </div>-->
     </div>
   </section><!-- End Hero Section -->
 
@@ -137,11 +139,7 @@
 
     <!-- ======= About Us Section ======= -->
     <section id="about-us" class="about-us padd-section">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-
-          <div class="col-md-8 col-lg-4">
-            <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
 
               <h2><span>About</span>KSM Driving school </h2>
               <p>KSM driving school is the standard school in the city of pearls since 2020 Hyderabad. We aim to revolutionize the way you learn to drive the fantastic vehicles of yours and travel round the globe. Our sole mission is to create safe drivers and decrease the number of road accidents that cause a lot of human and monitory losses, thus, playing a safe strategy.
@@ -157,12 +155,9 @@
                 <li><i class="vi bi-chevron-right"></i>Self Driving Car</li>
               </ul>
 
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End About Us Section -->
+            </div></section>
+          
+    <!-- End About Us Section -->
 
     <!-- ======= Pricing Section ======= -->
     <!-- <section id="pricing" class="padd-section text-cente">
@@ -319,48 +314,40 @@
             <a href="https://t.me/ksmdriving"><i class="bi bi-telegram"></i></a>
             <a href="https://www.youtube.com/channel/UC_kSYjnM33a3ZopJOpi2AAg"><i class="bi bi-youtube"></i></a>
             </div>
-
+            
           </div>
-
           <div class="col-lg-5 col-md-8">
             <div class="form">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+               <form role="form" method="POST" id="contactForm" class="php-email-form">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group mt-3">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                 <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message"  id="message" required></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
+                  <div class="loading">Submitting your review</div>
+                  <div class="sent-request">Your review has been Submitted</div>
+                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
             </div>
           </div>
         </div>
       </div>
+      
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer class="footer">
-   
     <div class="copyrights">
       <div class="container">
         <p> Copyrights KSM &copy; All rights reserved.</p>
-        <div class="credits">
-          <!-- Designed by <a href="https://nsanju0413.web.app/">Sanju</a> -->
-        </div>
       </div>
     </div>
 
@@ -372,12 +359,11 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Template Main JS File - FireBase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

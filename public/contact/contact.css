@@ -49,13 +49,13 @@ ul{
 
 .contact{
   background:#f9feff;
+  padding: 1em;
 }
 
 /* FORM STYLES */
 .contact form{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact form label{
@@ -89,7 +89,7 @@ ul{
   transition: background-color 2s ease-out;
 }
 
-.alert{
+.loading{
   text-align: center;
   padding:10px;
   background:#79c879;

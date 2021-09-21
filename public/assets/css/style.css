@@ -14,7 +14,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+
 }
 
 h2 {
@@ -362,6 +362,7 @@ span {
     background-attachment: fixed;
   }
 }
+
 #hero .hero-container {
   position: absolute;
   bottom: 0;
@@ -375,19 +376,13 @@ span {
   text-align: center;
 }
 #hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  font-family: "Philosopher", sans-serif;
-  color: #71c55d;
+  margin-top: 23px;
+  font-size: 3.5vw;
+  font-weight: bold;
+  font-family: 'Source Code Pro', monospace;  
+  color: #b6b8b6;
 }
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
+
 #hero h2 {
   color: #777;
   margin-bottom: 30px;
@@ -395,13 +390,7 @@ span {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
-@media (max-width: 768px) {
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-}
+
 #hero img {
   max-width: 95%;
   margin-bottom: 30px;
@@ -444,6 +433,7 @@ span {
   color: #71c55d;
 }
 
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -463,11 +453,11 @@ section {
 }
 
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 @media (max-width: 992px) {
   .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -556,7 +546,7 @@ section {
   height: 100%;
   width: 100%;
 }
-#get-started .feature-block {
+#get-started .feature-block{
   background: #fff none repeat scroll 0 0;
   padding: 30px 20px;
   transition: all 0.5s ease-in-out 0s;
@@ -568,7 +558,7 @@ section {
 }
 @media (max-width: 991px) {
   #get-started .feature-block {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 #get-started .feature-block:hover {
@@ -598,10 +588,11 @@ section {
 #about-us img {
   max-width: 100%;
 }
-#about-us .about-content {
-  padding-top: 60px;
+#about-us {
+  padding-left: 30px;
+  padding-right: 30px;
 }
-#about-us .about-content h2 {
+#about-us h2 {
   color: #252525;
   font-family: "roboto";
   font-size: 39px;
@@ -1159,38 +1150,23 @@ section {
   background: #55b03f;
   color: #fff;
 }
-#contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-#contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-#contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-#contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
 #contact .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
+#contact .sent-request{
+  display: none;
+  background-color: #3bd650;
+  font-weight: bold;
+  text-align: center;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  padding: 15px;
+}
+
 #contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
@@ -1249,7 +1225,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   background: #2a2c30;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .footer .footer-logo .navbar-brand {
   color: #fff;

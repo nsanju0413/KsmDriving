@@ -25,18 +25,18 @@ function submitForm(e){
   // Get values
   var name = getInputVal('name');
   var email = getInputVal('email');
-  var subject = getInputVal('subject');
+  var phone = getInputVal('subject');
   var message = getInputVal('message');
 
   // Save message
   saveMessage(name, email, subject, message);
 
   // Show alert
-  document.querySelector('.loading').style.display = 'block';
+  document.querySelector('.alert').style.display = 'block';
 
   // Hide alert after 3 seconds
   setTimeout(function(){
-    document.querySelector('.loading').style.display = 'none';
+    document.querySelector('.alert').style.display = 'none';
   },3000);
 
   // Clear form
